@@ -2,7 +2,7 @@
 UART (serial interface) terminal emulator Chrome App
 
 ### UARTool  highlights:
-- Can run on any operation system
+- Runs on any operation system
 - Works with native COM-ports and USB to Serial adaptors
 - User macro buttons for better productivity
 
@@ -12,6 +12,7 @@ UART (serial interface) terminal emulator Chrome App
 ### Installation
 1. Download UARTool files to a local folder
 2. In Chrome enter [chrome://extensions](chrome://extensions)
-3. Click on "Load unpacked extension ..." and point to local UARTool folder
+3. In Chrome enter [link](http://google.com)
+4. Click on "Load unpacked extension ..." and point to local UARTool folder
 
 ### 
