@@ -43,7 +43,9 @@
       background-color:#E0E0E0;
       float:right;
       width:250px;
-      height: 100%;
+      height: -webkit-calc(100% - 75px);;
+      height: -moz-calc(100% - 75px);;
+      height: calc(100% - 75px);;
     }
    
     
@@ -107,11 +109,11 @@
       </div>
       <div class="modal-body">
         <div class="input-group">
-          <input id="NewButtonName" style="width:250px;" type="text" class="form-control" placeholder="Button Text...">
+          <input id="NewButtonName" style="width:250px;" type="text" class="form-control" placeholder="Button Name ...">
         </div>
         <br>
         <div class="input-group">
-          <input id="NewButtonCommands" style="width:250px;" type="text" class="form-control" placeholder="Commands to send (\r for <CR>)...">
+          <textarea id="NewButtonCommands" style="width:250px;" rows="6" class="form-control" placeholder="Commands to send ..."></textarea>
           <input id="EditId" type="hidden">
         </div>
       </div>

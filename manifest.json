@@ -2,14 +2,14 @@
   "minimum_chrome_version": "25",
   "manifest_version": 2,
   "name": "UARTool",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "128": "images/UARTool-128.png",
     "48": "images/UARTool-48.png",
     "32": "images/UARTool-32.png",
     "16": "images/UARTool-16.png"
   },
-  "description": "UARTool is serial terminal emulator.",
+  "description": "UART (Serial COM interface) terminal emulator.",
   "offline_enabled": true,
   "permissions": [
     "serial",

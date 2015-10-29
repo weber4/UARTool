@@ -236,7 +236,7 @@ function AddButton(i,name,command)
   document.getElementById("button" + i).addEventListener('click', function(e) {
       chrome.serial.send(
         self.connectionId, 
-        str2ab(ExtensionData.buttons[i].command.replace(/\\r/g,'\r')),
+        str2ab(ExtensionData.buttons[i].command.replace(/(\r\n|\n|\r)/gm,"\r")),
         function () { }
       ); 
   });
