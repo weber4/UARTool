@@ -17,7 +17,7 @@ var str2ab = function(str) {
   var bufView = new Uint8Array(buf);
   for (var i=0; i<str.length; i++) {
     bufView[i] = str.charCodeAt(i);
-    //console.log(str,i,bufView[i]);
+    console.log(str,i,bufView[i]);
   }
   return buf;
 }

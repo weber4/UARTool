@@ -5480,7 +5480,7 @@ hterm.Keyboard = function(terminal) {
    * Ctrl+V pastes if true, sends ^V to host if false.
    * Ctrl+Shift+V sends ^V to host if true, pastes if false.
    */
-  this.ctrlVPaste = false;
+  this.ctrlVPaste = true;
 
   /**
    * Enable/disable application keypad.
@@ -7671,7 +7671,7 @@ hterm.PreferenceManager.defaultPreferences = {
    'Ctrl+Shift+C sends ^C to host if true, copies if false.'],
 
   'ctrl-v-paste':
-  [hterm.PreferenceManager.categories.Keyboard, false, 'bool',
+  [hterm.PreferenceManager.categories.Keyboard, true, 'bool',
    'Ctrl+V pastes if true, send ^V to host if false.\n' +
    'Ctrl+Shift+V sends ^V to host if true, pastes if false.'],
 
@@ -7768,7 +7768,7 @@ hterm.PreferenceManager.defaultPreferences = {
    'Set whether the meta key sends a leading escape or not.'],
 
   'mouse-paste-button':
-  [hterm.PreferenceManager.categories.CopyPaste, null,
+  [hterm.PreferenceManager.categories.CopyPaste, 2,
    [null, 0, 1, 2, 3, 4, 5, 6],
    'Mouse paste button, or null to autodetect.\n' +
    '\n' +
